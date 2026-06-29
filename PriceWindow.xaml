@@ -1,0 +1,16 @@
+﻿<Window x:Class="MusicStore.PriceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Изменить цену" Height="450" Width="400">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBox x:Name="CatalogTextBox" IsReadOnly="True" Height="200" VerticalScrollBarVisibility="Auto"/>
+            <TextBlock Text="Номер товара:"/>
+            <TextBox x:Name="ProductIndexTextBox" PreviewTextInput="NumberOnly"/>
+            <TextBlock Text="Новая цена:"/>
+            <TextBox x:Name="PriceTextBox" PreviewTextInput="NumberOnly"/>
+            <Button Content="Установить цену" Click="SetPrice_Click" Margin="0,5"/>
+            <Button Content="Назад" Click="BackButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

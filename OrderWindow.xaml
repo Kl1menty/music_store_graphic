@@ -1,0 +1,16 @@
+﻿<Window x:Class="MusicStore.OrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Создать заказ" Height="400" Width="400">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBox x:Name="CatalogTextBox" IsReadOnly="True" Height="200" VerticalScrollBarVisibility="Auto"/>
+            <TextBlock Text="Номер товара:"/>
+            <TextBox x:Name="ProductIndexTextBox" PreviewTextInput="NumberOnly"/>
+            <TextBlock Text="Количество:"/>
+            <TextBox x:Name="QuantityTextBox" PreviewTextInput="NumberOnly"/>
+            <Button Content="Оформить заказ" Click="PlaceOrder_Click" Margin="0,5"/>
+            <Button Content="Назад" Click="BackButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

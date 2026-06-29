@@ -1,0 +1,13 @@
+﻿<Window x:Class="MusicStore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Music Store" Height="400" Width="300">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20" >
+        <Button Content="Просмотр каталога" Click="CatalogButton_Click" Margin="5"/>
+        <Button Content="Создать заказ" Click="OrderButton_Click" Margin="5"/>
+        <Button Content="Создать поставку" Click="SupplyButton_Click" Margin="5"/>
+        <Button Content="Изменить цену товара" Click="PriceButton_Click" Margin="5"/>
+        <Button Content="Сформировать отчет" Click="ReportButton_Click" Margin="5"/>
+        <Button Content="Выйти" Click="ExitButton_Click" Margin="5"/>
+    </StackPanel>
+</Window>
